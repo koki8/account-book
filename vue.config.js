@@ -1,11 +1,11 @@
+const isProd = process.env.NODE_ENV === 'production'
+
 module.exports = {
   transpileDependencies: [
     'vuetify'
   ],
-  
-  devServer: {
-    public: process.env.C9_PID
-      ? `${process.env.C9_PID}.vfs.cloud9.ap-northeast-1.amazonaws.com`
-      : 'localhost:8080',
-  },
+  publicPath: isProd ? 'https://github.com/koki8/account-book' : '/',
+  outputDir: 'docs',
+  filenameHashing: false,
+  productionSourceMap: false
 }
