@@ -4,7 +4,7 @@ module.exports = {
   transpileDependencies: [
     'vuetify'
   ],
-  publicPath: isProd ? 'https://github.com/koki8/account-book' : '/',
+  publicPath: isProd ? 'https://koki8.github.io/account-book' : '/',
   outputDir: 'docs',
   filenameHashing: false,
   productionSourceMap: false
